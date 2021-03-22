@@ -38,12 +38,12 @@ function Links() {
   return (
     <div>
       <div className="d-flex justify-content-center flex-row stickers top">
-        <Sticker src={figma} link="https://www.figma.com/@maxine" class="img-sticker figma"/>
-        <Sticker src={arena} link="https://www.figma.com/@maxine" class="img-sticker arena"/>
+        <Sticker src={figma} link="https://www.figma.com/@maxine" class="img-sticker figma" rotate={15}/>
+        <Sticker src={arena} link="https://www.figma.com/@maxine" class="img-sticker arena" rotate={-18}/>
       </div>
       <div className="d-flex justify-content-center flex-row stickers bottom">
-        <Sticker src={linkedin} link="https://www.figma.com/@maxine" class="img-sticker linkedin"/>
-        <Sticker src={resume} link="https://www.figma.com/@maxine" class="img-sticker resume"/>
+        <Sticker src={linkedin} link="https://www.figma.com/@maxine" class="img-sticker linkedin" rotate={-22}/>
+        <Sticker src={resume} link="https://www.figma.com/@maxine" class="img-sticker resume" rotate={25}/>
       </div>
     </div>
   )
