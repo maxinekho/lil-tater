@@ -29,7 +29,7 @@ function Body() {
         <Links/>
       </div>
       <img src={max} alt="max" className="img-max"></img>
-      <img src={manila} alt="made in manila" className="img-logo"></img>
+      <img src={manila} alt="made in manila" className="mnl"></img>
     </div>
   )
 }
