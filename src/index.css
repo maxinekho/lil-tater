@@ -6,8 +6,6 @@ body {
   font-family: 'Space Mono', monospace;
   background-color: #1A4DD4;
   color: #BFFFFF;
-  font-size: 14px;
-  margin: 2em;
 }
 
 /* .tilt-right {
@@ -22,42 +20,123 @@ img {
   object-fit: contain;
 }
 
-.img-logo {
-  width: 6em;
-  margin-bottom: 1em;
-}
-
-.mnl {
-  width: 12em;
-}
-
-.img-max {
-  margin: 0 4em;
-}
-
-.img-sticker {
-  width: 96%;
-}
-
-.about-p {
-  width: 18%;
-}
-
-.stickers {
-  width: 16em;
-  margin: -1.5em;
-}
-
-.top {
-  margin-top: 2em;
-  margin-left: 2em;
-}
-
-.arena {
-  margin-top: 4.5em;
-}
-
 footer {
   bottom: 0;
-  margin: 4em 16em;
+}
+
+@media (min-width: 375px) {
+}
+
+@media (min-width: 425px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  body {
+    margin: 2em;
+    font-size: .9em;
+  }
+
+  .img-logo {
+    width: 6em;
+    margin-bottom: 1em;
+  }
+
+  .mnl {
+    width: 12em;
+  }
+
+  .img-max {
+    margin: 0 4em;
+  }
+
+  .img-sticker {
+    width: 96%;
+  }
+
+  .about-p {
+    width: 18%;
+  }
+
+  .stickers {
+    width: 16em;
+    margin: -1.5em -7em;
+  }
+
+  .top {
+    margin-top: 2em;
+    margin-left: -4em;
+  }
+
+  .arena {
+    margin-top: 4.5em;
+  }
+
+  .linkedin {
+    width: 6.5em;
+  }
+
+  .resume {
+    width: 10.5em;
+  }
+
+  footer {
+    margin: 4em 14.3em;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    margin: 2em;
+    font-size: 1em;
+  }
+
+  .img-logo {
+    width: 7em;
+    margin-bottom: 1em;
+  }
+
+  .mnl {
+    width: 15em;
+  }
+
+  .img-max {
+    margin: 0 6em;
+  }
+
+  .img-sticker {
+    width: 96%;
+  }
+
+  .about-p {
+    width: 20%;
+  }
+
+  .stickers {
+    width: 16em;
+    margin: -1.5em -6em;
+  }
+
+  .top {
+    margin-top: 2em;
+    margin-left: -4em;
+  }
+
+  .arena {
+    margin-top: 4.5em;
+  }
+
+  .linkedin {
+    width: 6.5em;
+  }
+
+  .resume {
+    width: 10.5em;
+  }
+
+  footer {
+    margin: 7em 9em;
+  }
 }
