@@ -39,11 +39,11 @@ function Links() {
     <div>
       <div className="d-flex justify-content-center flex-row stickers top">
         <Sticker src={figma} link="https://www.figma.com/@maxine" class="img-sticker figma" rotate={15}/>
-        <Sticker src={arena} link="https://www.figma.com/@maxine" class="img-sticker arena" rotate={-18}/>
+        <Sticker src={arena} link="https://www.are.na/maxine-kho" class="img-sticker arena" rotate={-18}/>
       </div>
       <div className="d-flex justify-content-center flex-row stickers bottom">
-        <Sticker src={linkedin} link="https://www.figma.com/@maxine" class="img-sticker linkedin" rotate={-22}/>
-        <Sticker src={resume} link="https://www.figma.com/@maxine" class="img-sticker resume" rotate={25}/>
+        <Sticker src={linkedin} link="https://www.linkedin.com/in/maxinekho/" class="img-sticker linkedin" rotate={-22}/>
+        <Sticker src={resume} link="https://drive.google.com/drive/folders/1xmAsl4kvBtNqjJemNNeda82qmMcOb82A" class="img-sticker resume" rotate={25}/>
       </div>
     </div>
   )
