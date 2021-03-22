@@ -4,4 +4,36 @@
 
 body {
   font-family: 'Space Mono', monospace;
+  background-color: #1A4DD4;
+  color: #BFFFFF;
+  font-size: 14px;
+  margin: 2em;
+}
+
+.tilt-right {
+  transform: rotate(0.08turn);
+}
+
+.tilt-left {
+  transform: rotate(-0.08turn);
+}
+
+.img-sticker {
+  width: 12em;
+  object-fit: contain;
+}
+
+.img-max {
+  margin: 0 4em;
+}
+
+.about-p {
+  width: 17%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 3em;
+  margin-left: 16em;
 }
