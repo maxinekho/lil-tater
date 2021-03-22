@@ -10,30 +10,49 @@ body {
   margin: 2em;
 }
 
-.tilt-right {
+/* .tilt-right {
   transform: rotate(0.08turn);
 }
 
 .tilt-left {
   transform: rotate(-0.08turn);
+} */
+
+img {
+  object-fit: contain;
 }
 
-.img-sticker {
+.img-logo {
   width: 12em;
-  object-fit: contain;
 }
 
 .img-max {
   margin: 0 4em;
 }
 
+.img-sticker {
+  width: 100%;
+}
+
 .about-p {
-  width: 17%;
+  width: 18%;
+}
+
+.stickers {
+  width: 16em;
+  margin: -2em 0;
+}
+
+.top {
+  margin-top: 2em;
+  margin-left: 2.5em;
+}
+
+.arena {
+  padding-top: 5em;
 }
 
 footer {
-  position: absolute;
   bottom: 0;
-  margin-bottom: 3em;
-  margin-left: 16em;
+  margin: 7em 16em;
 }

@@ -1,12 +1,17 @@
 import logo from "../assets/logo.png";
 import max from "../assets/arch.png";
 import manila from "../assets/mnl.png";
+import figma from "../assets/figma.png";
+import arena from "../assets/arena.png";
+import linkedin from "../assets/linkedin.png";
+import resume from "../assets/resume.png";
+import Sticker from "../utils/Stickers";
 
 export default function About() {
   return (
     <div>
       <div className="d-flex align-items-center flex-column">
-        <img src={logo} alt="logo" className="img-sticker"></img>
+        <img src={logo} alt="logo" className="img-logo"></img>
         <Body/>
       </div>
       <footer>&copy;2021 Maxine Kho</footer>
@@ -21,9 +26,10 @@ function Body() {
         <p>Max is a product designer doing design systems work at Facebook. She most drawn to work that requires a high degree of craft, collaboration & a whole lot of care.</p>
         <p>Max is a sucker for handwritten notes, tart strawberry ice cream, and the good food + good music + good company trifecta and learns most things from the internet, books, and from the people around her.</p>
         <p>Say hello@maxinekho.com</p>
+        <Links/>
       </div>
       <img src={max} alt="max" className="img-max"></img>
-      <img src={manila} alt="made in manila" className="img-sticker"></img>
+      <img src={manila} alt="made in manila" className="img-logo"></img>
     </div>
   )
 }
@@ -31,7 +37,14 @@ function Body() {
 function Links() {
   return (
     <div>
-
+      <div className="d-flex justify-content-center flex-row stickers top">
+        <Sticker src={figma} link="https://www.figma.com/@maxine" class="img-sticker figma"/>
+        <Sticker src={arena} link="https://www.figma.com/@maxine" class="img-sticker arena"/>
+      </div>
+      <div className="d-flex justify-content-center flex-row stickers bottom">
+        <Sticker src={linkedin} link="https://www.figma.com/@maxine" class="img-sticker linkedin"/>
+        <Sticker src={resume} link="https://www.figma.com/@maxine" class="img-sticker resume"/>
+      </div>
     </div>
   )
 }
