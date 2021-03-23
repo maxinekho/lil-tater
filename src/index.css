@@ -36,7 +36,7 @@ footer {
 @media (min-width: 1024px) {
   body {
     margin: 2em;
-    font-size: .9em;
+    font-size: .8em;
   }
 
   .img-logo {
@@ -90,7 +90,7 @@ footer {
 @media (min-width: 1440px) {
   body {
     margin: 2em;
-    font-size: 1em;
+    font-size: .8em;
   }
 
   .img-logo {
@@ -99,7 +99,7 @@ footer {
   }
 
   .mnl {
-    width: 15em;
+    width: 14em;
   }
 
   .img-max {
@@ -129,7 +129,7 @@ footer {
   }
 
   .linkedin {
-    width: 6.5em;
+    width: 7em;
   }
 
   .resume {

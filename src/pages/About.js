@@ -23,8 +23,8 @@ function Body() {
   return (
     <div className="d-flex justify-content-center flex-row">
       <div className="about-p flex-column">
-        <p>Max is a product designer doing design systems work at Facebook. She most drawn to work that requires a high degree of craft, collaboration & a whole lot of care.</p>
-        <p>Max is a sucker for handwritten notes, tart strawberry ice cream, and the good food + good music + good company trifecta and learns most things from the internet, books, and from the people around her.</p>
+        <p>Max is a product designer doing design systems work at Facebook. She is most drawn to work that requires a high degree of craft, collaboration & a whole lot of care.</p>
+        <p>Max is a sucker for handwritten notes, tart strawberry ice cream, and the good food + good music + good company trifecta and learns most things from the internet, books, and the people around her.</p>
         <p>Say hello@maxinekho.com</p>
         <Links/>
       </div>
