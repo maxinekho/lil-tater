@@ -44,7 +44,10 @@ function Links() {
         <Sticker src={linkedin} link="https://www.linkedin.com/in/maxinekho/" class="img-sticker linkedin" rotate={-22}/>
         <Sticker src={resume} link="https://drive.google.com/drive/folders/1xmAsl4kvBtNqjJemNNeda82qmMcOb82A" class="img-sticker resume" rotate={25}/>
       </div>
-      <footer>&copy;2021 Maxine Kho</footer>
+      <footer>
+        &copy;2021 Maxine Kho
+        <p>Built by <a href="http://audrey-kho.github.io/" className="web-link">AK</a></p>
+      </footer>
     </div>
   )
 }
