@@ -47,8 +47,8 @@ footer {
 @media (min-width: 1024px) {
   body {
     margin: 2em;
-    margin-top: 6em;
-    font-size: .85em;
+    margin-top: 5em;
+    font-size: .7em;
   }
 
   .img-logo {
@@ -72,7 +72,7 @@ footer {
   }
 
   .about-p {
-    width: 18%;
+    width: 14%;
   }
 
   .stickers {
@@ -106,7 +106,7 @@ footer {
   }
 
   footer {
-    margin: 4em 0em;
+    margin: 3.5em 0em;
   }
 }
 
@@ -114,7 +114,7 @@ footer {
   body {
     margin: 2em;
     margin-top: 6em;
-    font-size: 1em;
+    font-size: .8em;
   }
 
   .img-logo {
@@ -138,7 +138,7 @@ footer {
   }
 
   .about-p {
-    width: 20%;
+    width: 15.5%;
   }
 
   .stickers {
