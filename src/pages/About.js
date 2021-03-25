@@ -35,7 +35,7 @@ function Body() {
 
 function Links() {
   return (
-    <div justify-content-start>
+    <div>
       <div className="d-flex justify-content-center flex-row stickers top">
         <Sticker src={figma} link="https://www.figma.com/@maxine" class="img-sticker figma" rotate={15}/>
         <Sticker src={arena} link="https://www.are.na/maxine-kho" class="img-sticker arena" rotate={-18}/>
