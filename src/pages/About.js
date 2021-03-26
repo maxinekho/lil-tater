@@ -46,7 +46,7 @@ function Links() {
       </div>
       <footer>
         &copy;2021 Maxine Kho
-        <p>Built by <a href="http://audrey-kho.github.io/" className="web-link">AK</a></p>
+        <p>Built by <a href="http://audrey-kho.github.io/" target="_blank" className="web-link">AK</a></p>
       </footer>
     </div>
   )
