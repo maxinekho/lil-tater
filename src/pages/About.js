@@ -13,6 +13,21 @@ export default function About() {
       <div className="d-flex align-items-center flex-column">
         <img src={logo} alt="logo" className="img-logo"></img>
         <Body/>
+        <BodyMobile/>
+      </div>
+    </div>
+  )
+}
+
+function BodyMobile() {
+  return (
+    <div id="mobile">
+      <img src={max} alt="max" className="img-max"></img>
+      <div className="about-p flex-column">
+        <p>Max is a product designer doing design systems work at Facebook. She is most drawn to work that requires a high degree of craft, collaboration & a whole lot of care.</p>
+        <p>Max is a sucker for handwritten notes, tart strawberry ice cream, and the good food + good music + good company trifecta and learns most things from the internet, books, and the people around her.</p>
+        <p>Say hello@maxinekho.com</p>
+        <Links/>
       </div>
     </div>
   )
@@ -20,7 +35,7 @@ export default function About() {
 
 function Body() {
   return (
-    <div className="d-flex justify-content-center flex-row">
+    <div id="browser">
       <div className="about-p flex-column">
         <p>Max is a product designer doing design systems work at Facebook. She is most drawn to work that requires a high degree of craft, collaboration & a whole lot of care.</p>
         <p>Max is a sucker for handwritten notes, tart strawberry ice cream, and the good food + good music + good company trifecta and learns most things from the internet, books, and the people around her.</p>
@@ -46,7 +61,7 @@ function Links() {
       </div>
       <footer>
         &copy;2021 Maxine Kho
-        <p>Built by <a href="http://audrey-kho.github.io/" target="_blank" className="web-link">AK</a></p>
+        <p>Built by <a href="http://audrey-kho.github.io/" target="_blank" rel="noreferrer" className="web-link">AK</a></p>
       </footer>
     </div>
   )

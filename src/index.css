@@ -20,6 +20,10 @@ img {
   object-fit: contain;
 }
 
+.stickers {
+  display: flex !important;
+}
+
 .web-link {
   color: #BFFFFF;
   border-bottom: #BFFFFF dashed 1px;
@@ -36,15 +40,116 @@ footer {
 }
 
 @media (min-width: 375px) {
+  #mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #browser {
+    display: none;
+  }
 }
 
 @media (min-width: 425px) {
+  #mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #browser {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
+  #mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #browser {
+    display: none;
+  }
+
+  body {
+    margin: 2em;
+    margin-top: 5em;
+    font-size: .7em;
+  }
+
+  .img-logo {
+    width: 7em;
+    margin-bottom: 4em;
+  }
+
+  .mnl {
+    width: 12.5em;
+  }
+
+  .img-max {
+    width: 28em;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-bottom: 12em;
+  }
+
+  .img-sticker {
+    width: 95%;
+  }
+
+  .about-p {
+    width: 14%;
+  }
+
+  .stickers {
+    width: 16em;
+    margin: -1em -7em;
+  }
+
+  .top {
+    margin-top: 3em;
+    margin-left: -3.8em;
+  }
+
+  .figma {
+    width: 7.5em;
+  }
+
+  .arena {
+    margin-top: 4em;
+    margin-left: 1.5em;
+    width: 6.5em;
+  }
+
+  .linkedin {
+    width: 8em;
+  }
+
+  .resume {
+    margin-top: .5em;
+    margin-left: -.5em;
+    width: 14em;
+  }
+
+  footer {
+    margin: 3.5em 0em;
+  }
 }
 
 @media (min-width: 1024px) {
+  #mobile {
+    display: none;
+  }
+
+  #browser {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   body {
     margin: 2em;
     margin-top: 5em;
@@ -111,6 +216,17 @@ footer {
 }
 
 @media (min-width: 1440px) {
+  #mobile {
+    display: none;
+  }
+
+  #browser {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
   body {
     margin: 2em;
     margin-top: 6em;
@@ -176,5 +292,15 @@ footer {
 
   footer {
     margin: 5em 0em;
+  }
+}
+
+@media (min-width: 2000px) {
+  #mobile {
+    display: none;
+  }
+
+  #browser {
+    display: block;
   }
 }
