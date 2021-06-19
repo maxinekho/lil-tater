@@ -27,6 +27,17 @@ img {
   border-bottom: #272524 dashed 1px;
 }
 
+h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.8em;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+.title {
+  margin-bottom: 2.5em;
+}
+
 footer {
   bottom: 0;
 }

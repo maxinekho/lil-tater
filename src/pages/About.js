@@ -4,7 +4,6 @@ export default function About() {
   return (
     <div>
       <div className="d-flex align-items-center flex-column">
-        <img src="/images/logo.png" alt="logo" className="img-logo"></img>
         <Body/>
         <BodyMobile/>
       </div>
@@ -17,6 +16,10 @@ function BodyMobile() {
     <div id="mobile">
       <img src="/images/arch.png" alt="max" className="img-max"></img>
       <div className="about-p flex-column">
+        <div className="title">
+          <h1>Maxine Kho</h1>
+          <h1>Product Designer</h1>
+        </div>
         <p>Max is a product designer doing design systems work at Facebook. She is most drawn to work that requires a high degree of craft, collaboration & a whole lot of care.</p>
         <p>Max is a sucker for handwritten notes, tart strawberry ice cream, and the good food + good music + good company trifecta and learns most things from the internet, books, and the people around her.</p>
         <p>Say hello@maxinekho.com</p>
@@ -30,6 +33,10 @@ function Body() {
   return (
     <div id="browser">
       <div className="about-p flex-column">
+        <div className="title">
+          <h1>Maxine Kho</h1>
+          <h1>Product Designer</h1>
+        </div>
         <p>Max is a product designer doing design systems work at Facebook. She is most drawn to work that requires a high degree of craft, collaboration & a whole lot of care.</p>
         <p>Max is a sucker for handwritten notes, tart strawberry ice cream, and the good food + good music + good company trifecta and learns most things from the internet, books, and the people around her.</p>
         <p>Say hello@maxinekho.com</p>
