@@ -3,18 +3,10 @@
 }
 
 body {
-  font-family: 'Space Mono', monospace;
-  background-color: #1A4DD4;
-  color: #BFFFFF;
+  font-family: 'Public Sans', sans-serif;
+  background-color: #F0EBE8;
+  color: #524D4B;
 }
-
-/* .tilt-right {
-  transform: rotate(0.08turn);
-}
-
-.tilt-left {
-  transform: rotate(-0.08turn);
-} */
 
 img {
   object-fit: contain;
@@ -25,14 +17,14 @@ img {
 }
 
 .web-link {
-  color: #BFFFFF;
-  border-bottom: #BFFFFF dashed 1px;
+  color: #524D4B;
+  border-bottom: #524D4B dashed 1px;
 }
 
 .web-link:hover {
-  color: #F85236;
+  color: #272524;
   text-decoration: none;
-  border-bottom: #F85236 dashed 1px;
+  border-bottom: #272524 dashed 1px;
 }
 
 footer {
