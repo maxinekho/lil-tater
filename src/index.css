@@ -22,9 +22,9 @@ img {
 }
 
 .web-link:hover {
-  color: #272524;
+  color: #161616;
   text-decoration: none;
-  border-bottom: #272524 dashed 1px;
+  border-bottom: #161616 dashed 1px;
 }
 
 h1 {
