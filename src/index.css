@@ -29,7 +29,7 @@ p {
 }
 
 .stickers {
-  margin-left: 75px;
+  margin-left: 98px;
 }
 
 .top {
@@ -37,7 +37,7 @@ p {
 }
 
 .bottom {
-  margin: -20px 0 1em -14px;
+  margin: -22px 0 1em -18px;
 }
 
 .img-sticker.figma {
@@ -46,7 +46,7 @@ p {
 }
 
 .img-sticker.arena {
-  max-height: 85px;
+  max-height: 82px;
 }
 
 .img-sticker.linkedin {
