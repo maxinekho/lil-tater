@@ -57,6 +57,11 @@ p {
   max-height: 150px;
 }
 
+.img-sticker:active {
+  transform: scale(0.95) !important;
+  transition: transform 0.2s ease !important;
+}
+
 .web-link {
   color: #524D4B;
   border-bottom: dashed 2px #F85236;
