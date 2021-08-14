@@ -69,8 +69,8 @@ p {
 }
 
 .web-link:hover {
-  color: #524D4B;
-  border-bottom: solid 2px #F85236;
+  color: #F85236;
+  border-bottom: dashed 2px #F85236;
   text-decoration: none;
   opacity: .75;
 }
