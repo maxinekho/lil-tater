@@ -41,20 +41,20 @@ p {
 }
 
 .img-sticker.figma {
-  max-height: 120px;
+  max-height: 150px;
   margin-right: 30px;
 }
 
 .img-sticker.arena {
-  max-height: 60px;
+  max-height: 85px;
 }
 
 .img-sticker.linkedin {
-  max-height: 150px;
+  max-height: 175px;
 }
 
 .img-sticker.resume {
-  max-height: 150px;
+  max-height: 175px;
 }
 
 .img-sticker:active {
