@@ -109,12 +109,12 @@ p {
 
   .img-sticker.arena {
     max-height: 80px;
-    margin-left: 150px;
+    margin: -10px 0 -10px 182px;
   }
 
   .img-sticker.linkedin {
     max-height: 172px;
-    margin-left: 6px;
+    margin: -10px 0 -10px 6px;
   }
 
   .img-sticker.resume {
