@@ -1,8 +1,8 @@
 import './index.css';
-import About from "./pages/About";
+import Page from './pages/Webpage';
 
 export default function App() {
   return (
-    <About/>
+    <Page/>
   )
 }
