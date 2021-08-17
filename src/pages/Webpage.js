@@ -31,7 +31,7 @@ const PageStyles = styled.section`
 
   @media (max-width: 1150px) {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 
     .featured {
       margin-top: 2.5em;
