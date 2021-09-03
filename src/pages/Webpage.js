@@ -29,6 +29,23 @@ const PageStyles = styled.section`
   display: flex;
   justify-content: space-between;
 
+  h1 {
+    em {
+      font-size: 1.1em;
+      line-height: .1;
+    }
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+
+  em {
+    font-family: 'Canela', serif;
+    font-size: 1.35em;
+    line-height: 0.9;
+  }
+
   @media (max-width: 1150px) {
     flex-direction: column;
     align-items: flex-start;
@@ -44,19 +61,19 @@ function About() {
     <section className="about">
       <div className="title">
         <h1>Maxine Kho</h1>
-        <h1>Product Designer</h1>
+        <h1><em>Product Designer</em></h1>
       </div>
       <p>
-        Max is a product designer doing design systems work at Facebook. She is
+        Max is a product designer doing <em>design systems</em> work at <em>Facebook</em>. She is
         most drawn to work that requires a high degree of craft, collaboration &
         a whole lot of care.
       </p>
       <p>
         Max is a sucker for handwritten notes, tart strawberry ice cream, and
-        the good food + good music + good company trifecta and learns most
+        the <em>good ol'</em> food + music + company trifecta and learns most
         things from the internet, books, and the people around her.
       </p>
-      <p>Say hello@maxinekho.com</p>
+      <p>Say <em>hello</em>@maxinekho.com</p>
       <Links />
     </section>
   );
