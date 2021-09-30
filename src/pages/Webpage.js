@@ -70,7 +70,7 @@ function About() {
       </p>
       <p>
         Max is a sucker for handwritten notes, tart strawberry ice cream, and
-        the <em>good ol'</em> food + music + company trifecta and learns most
+        the food + music + company trifecta and learns most
         things from the internet, books, and the people around her.
       </p>
       <p>Say <em>hello</em>@maxinekho.com</p>
