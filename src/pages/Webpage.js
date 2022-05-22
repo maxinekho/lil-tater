@@ -9,7 +9,7 @@ export default function Page() {
         <Featured />
       </PageStyles>
       <footer>
-        &copy; 2021 Maxine Kho
+        &copy; 2022 Maxine Kho
         <p>
           Built by&nbsp;
           <a
