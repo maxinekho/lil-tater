@@ -15,8 +15,8 @@ const MainText = () => {
   return (
     <section>
       <p>
-        Max is a Brooklyn-based product designer.
-        <br /> She is most drawn to work that requires a high degree of craft,
+        Max is a Brooklyn-based product designer. <br className="break"/>
+        She is most drawn to work that requires a high degree of craft,
         collaboration and a whole lot of care.
       </p>
       <p>Say hello@maxinekho.com</p>
