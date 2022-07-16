@@ -1,170 +1,74 @@
 @font-face {
   font-family: "Bespoke";
-  src: url("./fonts/Bespoke.ttf") format("truetype");
+  src: url(../public/assets/Bespoke.ttf) format("truetype");
 }
 
-@font-face {
-  font-family: "Canela";
-  src: url("./fonts/canelaweb-thinitalic.ttf") format("truetype");
-}
-
-* {
-  box-sizing: border-box;
+html {
+  background-color: #f0ebe8;
 }
 
 body {
   font-family: "Bespoke", sans-serif;
-  font-size: 2em;
-  background-color: #f0ebe8;
+  font-size: .8em;
   color: #524d4b;
-  margin: 0;
-}
-
-.container {
-  margin: 1.5em auto;
-  max-width: 1250px;
+  max-width: 380px;
+  margin: 12em auto 4em;
 }
 
 p {
-  padding: 0.2em 0;
+  text-align: center;
 }
 
-.title {
-  margin-bottom: 1em;
+.top-stickers {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 4em;
+  margin-left: 60px;
 }
 
-.about {
-  max-width: 520px;
-  width: 125%;
-  margin-left: 1.2em;
-  padding: 2px;
+.bottom-stickers {
+  display: flex;
+  justify-content: center;
+  margin-top: -18px;
+  margin-left: -32px;
+  margin-bottom: 4em;
 }
 
-.stickers {
-  margin-left: 90px;
+.figma img {
+  max-width: 80px;
+  margin-right: 20px;
 }
 
-.top {
-  margin-top: 1em;
+.arena img {
+  max-width: 70px;
+  margin-bottom: 15px;
 }
 
-.bottom {
-  margin: -22px 0 1em -10px;
+.linkedin img {
+  max-width: 80px;
 }
 
-.img-sticker.figma {
-  max-height: 148px;
-  margin-right: 30px;
-}
-
-.img-sticker.arena {
-  max-height: 80px;
-}
-
-.img-sticker.linkedin {
-  max-height: 172px;
-}
-
-.img-sticker.resume {
-  max-height: 172px;
-}
-
-.img-sticker:active {
-  transform: scale(0.95) !important;
-  transition: transform 0.2s ease !important;
-}
-
-a:not(.sticker) {
-  color: #524d4b;
-  border-bottom: dashed 2px #f85236;
-  transition: all 0.3s;
-}
-
-a:not(.sticker):hover {
-  color: #f85236;
-  border-bottom: dashed 2px #f85236;
-  text-decoration: none;
-  opacity: 0.75;
-}
-
-svg {
-  padding-bottom: 5px;
+.resume img {
+  max-width: 140px;
   margin-left: -5px;
 }
 
-article {
-  max-width: 520px;
-  width: 125%;
-  margin: 2em 0;
-}
-
-img:not(.img-sticker) {
-  max-width: 500px;
-  width: 98%;
-  padding-bottom: 20px;
-}
-
-.featured {
-  margin-top: 4.68em;
-}
-
 footer {
-  padding-left: 1.4em;
+  line-height: .8em;
 }
 
-@media (max-width: 600px) {
-  body {
-    margin: 0.8em !important;
-  }
-
-  .about {
-    margin: 0;
-  }
+footer a {
+  color: #524d4b;
+  background-image: linear-gradient(to left, #F85236, #F85236 60%, transparent 40%);
+  background-size: 4px 1px;
+  background-repeat: repeat-x;
+  background-position: 0 96%;
+  padding: 0 1px;
+  text-decoration: none;
+  transition: all 0.3s;
 }
 
-@media (max-width: 460px) {
-  .stickers {
-    margin: 0;
-  }
-
-  .top {
-    margin-top: 1em;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .bottom {
-    margin: 0 0 1em;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .img-sticker.figma {
-    max-height: 148px;
-    margin: 0 0 -10px 8px;
-  }
-
-  .img-sticker.arena {
-    max-height: 80px;
-    margin: -10px 0 -10px 182px;
-  }
-
-  .img-sticker.linkedin {
-    max-height: 172px;
-    margin: -10px 0 -10px 6px;
-  }
-
-  .img-sticker.resume {
-    max-height: 172px;
-    margin: -40px 0 0 90px;
-  }
-}
-
-@media (max-width: 1150px) {
-  footer {
-    max-width: 520px !important;
-    width: 125%;
-    margin: 0 auto;
-    padding: 0.8em 0 0;
-  }
+a:hover {
+  color: #524d4bb9;
 }
