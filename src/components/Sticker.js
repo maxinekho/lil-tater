@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "framer-motion/dist/framer-motion";
 
 export const Sticker = ({ name, link, imgSrc, tiltDeg }) => {
   return (

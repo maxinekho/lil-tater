@@ -1,12 +1,13 @@
-import "./index.css";
-import { Sticker } from "./components/Sticker";
-import { Link } from "react-scroll";
 import clsx from "clsx";
-import { useState, useEffect } from "react";
-import ItemTitle from "./utils/ItemTitle";
-import { Separator } from "./utils/Separator";
-import ItemContent from "./utils/ItemContent";
 import dayjs from "dayjs";
+import { useEffect, useState } from "react";
+import { Link } from "react-scroll";
+import { Sticker } from "./components/Sticker";
+import "./index.css";
+import ItemContent from "./utils/ItemContent";
+import ItemTitle from "./utils/ItemTitle";
+import AnimatedP from "./utils/AnimatedP";
+import { Separator } from "./utils/Separator";
 
 function App() {
   /**
@@ -66,15 +67,15 @@ function App() {
           alt1="Messenger calls"
           src2="assets/sticker_1.png"
         >
-          <p>
+          <AnimatedP>
             My team empowered 1.3B active users to feel connected even when they
             are not physically together.
-          </p>
-          <p>
+          </AnimatedP>
+          <AnimatedP>
             I worked on projects that elevate shared experiences on this surface
             and introduce new ones in video calls. Designs are still under NDA,
             please reach out to learn more.
-          </p>
+          </AnimatedP>
         </ItemContent>
         <Separator />
         <ItemTitle date="September&#8211;December 2021">
@@ -96,11 +97,11 @@ function App() {
           // src2="assets/sticker_2.png"
         >
           <></>
-          <p>
+          <AnimatedP>
             I owned and delivered an end-to-end unified creation experience for
             creators and businesses alike and designed media formats that
             support video, story, reels, and audio-only content.
-          </p>
+          </AnimatedP>
         </ItemContent>
         <Separator />
         <ItemTitle date="August 2020&#8211;May 2022">
@@ -112,7 +113,7 @@ function App() {
           alt1="Design system components used in an app"
           src2="assets/sticker_3.png"
         >
-          <p>
+          <AnimatedP>
             As the design systems team, we created and maintained the design
             language across{" "}
             <a
@@ -123,15 +124,15 @@ function App() {
               25+ ads and business products
             </a>{" "}
             used by millions of advertisers and small business owners.
-          </p>
-          <p>
+          </AnimatedP>
+          <AnimatedP>
             On this team, I refreshed entire mobile visual system in lockstep
             with the company rebrand.
             <br />
             <br />I also designed primitives including color, type, spacing,
             elevation styles and base components like buttons controls,
             navigation and text inputs.
-          </p>
+          </AnimatedP>
         </ItemContent>
         <ItemContent
           id={4}
@@ -139,14 +140,14 @@ function App() {
           alt1="Page insight data visualizations"
         >
           <></>
-          <p>
+          <AnimatedP>
             I designed mobile data viz patterns that, since adoption, reversed
             regressions.
             <br />
             <br />I simultaneously crafted animated transitions for components
             to aid user comprehension around progress, orientation, and
             navigation, achieving our goal of net neutral metrics.
-          </p>
+          </AnimatedP>
         </ItemContent>
       </main>
       <Footer />

@@ -103,6 +103,7 @@ header h1 {
 
 main {
   margin: 2em 1em 12em;
+  transition: all 1s;
 }
 
 main p {
