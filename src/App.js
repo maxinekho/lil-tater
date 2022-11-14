@@ -72,7 +72,7 @@ function App() {
             are not physically together.
           </AnimatedP>
           <AnimatedP>
-            I worked on projects that elevate shared experiences on this surface
+            I led design across projects that elevate shared experiences on this surface
             and introduce new ones in video calls. Designs are still under NDA,
             please reach out to learn more.
           </AnimatedP>
@@ -158,8 +158,14 @@ function App() {
 const HeaderText = () => {
   return (
     <h1>
-      Max is a Brooklyn-based product designer. <br className="break" />
-      She is most drawn to work that requires a high degree of craft,
+      Hi I’m Max! I’m a Brooklyn-based product designer.
+      <br />
+      <br />
+      I’m a sucker for handwritten notes, tart strawberry ice cream, the good
+      food + good music + good company trifecta. I learn most things from the
+      internet, books, and people around me.
+      <br />
+      <br />I am most drawn to work that requires a high degree of craft,
       collaboration and a whole lot of care.
     </h1>
   );
