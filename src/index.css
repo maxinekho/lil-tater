@@ -202,7 +202,7 @@ a:hover {
 
 @media (max-width: 560px) {
   body {
-    margin: 5em auto;
+    margin: 5em .5em;
   }
 
   .break {
@@ -221,13 +221,17 @@ a:hover {
 }
 
 @media (max-width: 425px) {
+  body {
+    margin: 5em .8em;
+  }
+
   .img-container-3 {
     max-width: 320px;
   }
 
   .sticker3 {
-    left: -32px;
-    top: -32px;
+    left: -26px;
+    top: -26px;
     max-width: 62px;
   }
 }
