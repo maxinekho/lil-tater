@@ -146,6 +146,29 @@ main div>img {
   width: 135px;
 }
 
+.sticker1 {
+  position: absolute;
+  right: -55px;
+  top: 50%;
+  transform: translateY(-55%);
+  width: 83px;
+}
+
+.sticker2 {
+  position: absolute;
+  right: -68px;
+  top: 50%;
+  transform: translateY(-5%);
+  width: 146px;
+}
+
+.sticker3 {
+  position: absolute;
+  left: -82px;
+  top: -82px;
+  width: 146px;
+}
+
 footer address {
   margin: 0 0 4em;
   font-style: normal;

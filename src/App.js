@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import ItemTitle from "./utils/ItemTitle";
 import { Separator } from "./utils/Separator";
 import ItemContent from "./utils/ItemContent";
+import dayjs from "dayjs";
 
 function App() {
   /**
@@ -92,7 +93,7 @@ function App() {
           id={2}
           src1="assets/creator-studio_2.png"
           alt1="Meta Business Suite Creator Studio"
-          src2="assets/sticker_2.png"
+          // src2="assets/sticker_2.png"
         >
           <></>
           <p>
@@ -205,7 +206,7 @@ const Footer = () => {
       <address>
         Say <a href="mailto:hello@maxinekho.com">hello@maxinekho.com</a>
       </address>
-      <p>&copy; {} Maxine Kho</p>
+      <p>&copy; {dayjs().year()} Maxine Kho</p>
       <p>
         Built by{" "}
         <a href="https://audrey-kho.github.io" target="_blank" rel="noreferrer">
