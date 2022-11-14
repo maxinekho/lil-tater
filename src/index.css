@@ -39,10 +39,13 @@ p {
   margin-right: 1em;
 }
 
+header {
+  margin: 0 1em;
+}
+
 header h1 {
   font-size: 1em;
   font-weight: 400;
-
 }
 
 .top-stickers {
@@ -99,7 +102,7 @@ header h1 {
 }
 
 main {
-  margin: 2em 0 8em;
+  margin: 2em 1em 8em;
 }
 
 main p {
@@ -115,6 +118,7 @@ svg {
 h2 {
   margin: 8px 0;
   font-weight: 400;
+  line-height: 1.4em;
 }
 
 main div>img {
@@ -125,25 +129,25 @@ main div>img {
 .img-container-1 {
   position: relative;
   margin: 60px auto;
-  width: 113px;
+  max-width: 113px;
 }
 
 .img-container-2 {
   position: relative;
   margin: 60px auto;
-  width: 490px;
+  max-width: 490px;
 }
 
 .img-container-3 {
   position: relative;
   margin: 60px auto;
-  width: 622px;
+  max-width: 622px;
 }
 
 .img-container-4 {
   position: relative;
   margin: 100px auto 60px;
-  width: 135px;
+  max-width: 135px;
 }
 
 .sticker1 {
@@ -151,7 +155,7 @@ main div>img {
   right: -55px;
   top: 50%;
   transform: translateY(-55%);
-  width: 83px;
+  max-width: 83px;
 }
 
 .sticker2 {
@@ -159,14 +163,14 @@ main div>img {
   right: -68px;
   top: 50%;
   transform: translateY(-5%);
-  width: 146px;
+  max-width: 146px;
 }
 
 .sticker3 {
   position: absolute;
   left: -82px;
   top: -82px;
-  width: 146px;
+  max-width: 146px;
 }
 
 footer address {
@@ -181,10 +185,10 @@ footer p {
 header a:not(.sticker), main a, footer a {
   color: #524d4b;
   background-image: linear-gradient(to left, #F85236, #F85236 50%, transparent 50%);
-  background-size: 8px 1.2px;
+  background-size: 10px 1.5px;
   background-repeat: repeat-x;
-  background-position: 0 101%;
-  padding: 1px;
+  background-position: 0 96%;
+  padding: 2px;
   text-decoration: none;
   transition: all 0.3s;
 }
@@ -200,5 +204,27 @@ a:hover {
 
   .break {
     display: none;
+  }
+
+  .img-container-3 {
+    max-width: 450px;
+  }
+
+  .sticker3 {
+    left: -56px;
+    top: -56px;
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 425px) {
+  .img-container-3 {
+    max-width: 320px;
+  }
+
+  .sticker3 {
+    left: -32px;
+    top: -32px;
+    max-width: 62px;
   }
 }
