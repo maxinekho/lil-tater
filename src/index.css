@@ -29,7 +29,6 @@ body {
   font-size: 0.94em;
   line-height: 1.4em;
   color: #524d4b;
-  max-width: 442px;
   margin: 6em auto 5em;
   text-align: center;
 }
@@ -40,10 +39,12 @@ p {
 }
 
 header {
-  margin: 0 1em;
+  margin: 0 auto;
 }
 
 header h1 {
+  margin: 0 auto;
+  max-width: 442px;
   font-size: 1em;
   font-weight: 400;
 }
@@ -125,6 +126,7 @@ h2 {
 main div>img {
   width: 100%;
   object-fit: contain;
+  margin: 0 auto;
 }
 
 .img-container-1 {
