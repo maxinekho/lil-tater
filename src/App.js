@@ -67,8 +67,8 @@ function App() {
           src2="assets/sticker_1.png"
         >
           <p>
-            Empowering 1.3B active users to feel connected even when they are
-            not physically together.
+            My team empowered 1.3B active users to feel connected even when they
+            are not physically together.
           </p>
           <p>
             I worked on projects that elevate shared experiences on this surface
@@ -98,9 +98,8 @@ function App() {
           <></>
           <p>
             I owned and delivered an end-to-end unified creation experience for
-            creators and businesses alike. <br />
-            <br /> Designed media formats that support video, story, reels, and
-            audio-only content.
+            creators and businesses alike and designed media formats that
+            support video, story, reels, and audio-only content.
           </p>
         </ItemContent>
         <Separator />
@@ -114,7 +113,8 @@ function App() {
           src2="assets/sticker_3.png"
         >
           <p>
-            Created and maintained the design language across{" "}
+            As the design systems team, we created and maintained the design
+            language across{" "}
             <a
               href="https://www.facebook.com/business/small-business/"
               target="_blank"
@@ -125,12 +125,12 @@ function App() {
             used by millions of advertisers and small business owners.
           </p>
           <p>
-            Refreshed entire mobile visual system in lockstep with the company
-            rebrand.
+            On this team, I refreshed entire mobile visual system in lockstep
+            with the company rebrand.
             <br />
-            <br /> Designed primitives including color, type, spacing, elevation
-            styles and base components like buttons controls, navigation and
-            text inputs.
+            <br />I also designed primitives including color, type, spacing,
+            elevation styles and base components like buttons controls,
+            navigation and text inputs.
           </p>
         </ItemContent>
         <ItemContent
@@ -140,13 +140,12 @@ function App() {
         >
           <></>
           <p>
-            Also designed mobile data viz patterns that, since adoption,
-            reversed regressions.
+            I designed mobile data viz patterns that, since adoption, reversed
+            regressions.
             <br />
-            <br />
-            Crafted animated transitions for components to aid user
-            comprehension around progress, orientation, and navigation. Achieved
-            our goal of net neutral metrics.
+            <br />I simultaneously crafted animated transitions for components
+            to aid user comprehension around progress, orientation, and
+            navigation, achieving our goal of net neutral metrics.
           </p>
         </ItemContent>
       </main>
