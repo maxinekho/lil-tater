@@ -1,25 +1,56 @@
 import "./index.css";
 import { Sticker } from "./components/Sticker";
+import { Link } from "react-scroll";
+import clsx from "clsx";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > 120) {
+        setScrolled(true);
+      } else {
+        setScrolled(false)
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [scrolled]);
+
   return (
     <>
-      <MainText />
-      <Stickers />
+      <header>
+        <HeaderText />
+        <Stickers />
+      </header>
+      <Link className={clsx({"scroll-btn":true, "bounce":!scrolled})} to="main-content" offset={-35} smooth>
+        <img
+          src="assets/scroll-button.png"
+          alt="fruit sticker with the text 'scroll'"
+        />
+      </Link>
+      <main id="main-content">
+        <p>Main content!</p>
+      </main>
       <Footer />
     </>
   );
 }
 
-const MainText = () => {
+const HeaderText = () => {
   return (
     <section>
       <p>
-        Max is a Brooklyn-based product designer. <br className="break"/>
+        Max is a Brooklyn-based product designer. <br className="break" />
         She is most drawn to work that requires a high degree of craft,
         collaboration and a whole lot of care.
       </p>
-      <p>Say hello@maxinekho.com</p>
     </section>
   );
 };
@@ -62,7 +93,10 @@ const Stickers = () => {
 const Footer = () => {
   return (
     <footer>
-      <p>&copy; 2022 Maxine Kho</p>
+      <address>
+        Say <a href="mailto:hello@maxinekho.com">hello@maxinekho.com</a>
+      </address>
+      <p>&copy; {} Maxine Kho</p>
       <p>
         Built by{" "}
         <a href="https://audrey-kho.github.io" target="_blank" rel="noreferrer">
