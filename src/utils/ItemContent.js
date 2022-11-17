@@ -2,8 +2,13 @@ import { motion } from "framer-motion/dist/framer-motion";
 
 export default function ItemContent(props) {
   const item = {
-    hidden: { opacity: 0, y: -15 },
+    hidden: { opacity: 0, y: -10 },
     visible: { opacity: 1, y: 0 },
+  };
+
+  const sticker = {
+    hidden: { opacity: 0, scale: 1.4 },
+    visible: { opacity: 1, scale: 1 },
   };
 
   return (
@@ -28,8 +33,8 @@ export default function ItemContent(props) {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 1 }}
-            variants={item}
-            transition={{ duration: 0.5, delay: 0.8 }}
+            variants={sticker}
+            transition={{ delay: 1, duration: 0.15, ease: 'easeIn' }}
           />
         ) : (
           ""

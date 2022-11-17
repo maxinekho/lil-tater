@@ -86,7 +86,7 @@ header h1 {
 
 .scroll-btn {
   display: block;
-  margin: 62px auto 120px;
+  margin: 76px auto 120px;
   width: 120px;
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -171,8 +171,8 @@ main div>img {
 
 .sticker3 {
   position: absolute;
-  left: -82px;
-  top: -82px;
+  left: -80px;
+  top: -78px;
   max-width: 146px;
 }
 
