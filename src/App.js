@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { Sticker } from "./components/Sticker";
 import "./index.css";
-import ItemContent from "./utils/ItemContent";
-import ItemTitle from "./utils/ItemTitle";
-import AnimatedP from "./utils/AnimatedP";
+import Image from "./utils/Image";
+import Title from "./utils/Title";
+import AnimatedText from "./utils/AnimatedText";
 import { Separator } from "./utils/Separator";
 
 function App() {
@@ -50,7 +50,7 @@ function App() {
         />
       </Link>
       <main id="main-content">
-        <ItemTitle date="May&#8211;November 2022">
+        <Title date="2022">
           <h2>
             <a
               href="https://techcrunch.com/2022/06/02/meta-calls-tab-messenger/"
@@ -60,25 +60,28 @@ function App() {
               Messenger Calls Tab
             </a>
           </h2>
-        </ItemTitle>
-        <ItemContent
+        </Title>
+        <AnimatedText>
+          <p>
+            Empowered 1.3B active users to feel connected even when they are not
+            physically together.
+          </p>
+        </AnimatedText>
+        <Image
           id={1}
           src1="assets/calls-tab_1.png"
           alt1="Messenger calls"
           src2="assets/sticker_1.png"
-        >
-          <AnimatedP>
-            My team empowered 1.3B active users to feel connected even when they
-            are not physically together.
-          </AnimatedP>
-          <AnimatedP>
-            I led design across projects that elevate shared experiences on this surface
-            and introduce new ones in video calls. Designs are still under NDA,
-            please reach out to learn more.
-          </AnimatedP>
-        </ItemContent>
+        />
+        <AnimatedText>
+          <p>
+            I was the design lead across multiple 0-1 projects that elevated
+            shared experiences on this surface and introduced new ones in video
+            calls. Designs are under NDA with several patents pending.
+          </p>
+        </AnimatedText>
         <Separator />
-        <ItemTitle date="September&#8211;December 2021">
+        <Title date="2021">
           <h2>
             <a
               href="https://www.facebook.com/business/tools/meta-business-suite"
@@ -87,35 +90,28 @@ function App() {
             >
               Meta Business Suite
             </a>
-            : Creator Studio
+            : Creator Vision
           </h2>
-        </ItemTitle>
-        <ItemContent
+        </Title>
+        <Image
           id={2}
           src1="assets/creator-studio_2.png"
           alt1="Meta Business Suite Creator Studio"
-          // src2="assets/sticker_2.png"
-        >
-          <></>
-          <AnimatedP>
+        />
+        <AnimatedText>
+          <p>
             I owned and delivered an end-to-end unified creation experience for
-            creators and businesses alike and designed media formats that
-            support video, story, reels, and audio-only content.
-          </AnimatedP>
-        </ItemContent>
+            creators and businesses alike, ushering millions of creators into
+            our business tools.
+          </p>
+        </AnimatedText>
         <Separator />
-        <ItemTitle date="August 2020&#8211;May 2022">
+        <Title date="2020">
           <h2>Facebook Business Design System</h2>
-        </ItemTitle>
-        <ItemContent
-          id={3}
-          src1="assets/design-system_3.png"
-          alt1="Design system components used in an app"
-          src2="assets/sticker_3.png"
-        >
-          <AnimatedP>
-            As the design systems team, we created and maintained the design
-            language across{" "}
+        </Title>
+        <AnimatedText>
+          <p>
+            My team created and maintained the design language across{" "}
             <a
               href="https://www.facebook.com/business/small-business/"
               target="_blank"
@@ -124,31 +120,55 @@ function App() {
               25+ ads and business products
             </a>{" "}
             used by millions of advertisers and small business owners.
-          </AnimatedP>
-          <AnimatedP>
+          </p>
+        </AnimatedText>
+        <Image
+          id={3}
+          src1="assets/design-system_3.png"
+          alt1="Design system components used in an app"
+          src2="assets/sticker_3.png"
+        />
+        <AnimatedText>
+          <p>
             On this team, I refreshed entire mobile visual system in lockstep
-            with the company rebrand.
-            <br />
-            <br />I also designed primitives including color, type, spacing,
-            elevation styles and base components like buttons controls,
+            with the company rebrand, including primitives like color, type,
+            spacing, elevation styles and base components like buttons controls,
             navigation and text inputs.
-          </AnimatedP>
-        </ItemContent>
-        <ItemContent
+          </p>
+        </AnimatedText>
+        <Image
           id={4}
           src1="assets/design-system_4.png"
           alt1="Page insight data visualizations"
-        >
-          <></>
-          <AnimatedP>
-            I designed mobile data viz patterns that, since adoption, reversed
-            regressions.
-            <br />
-            <br />I simultaneously crafted animated transitions for components
-            to aid user comprehension around progress, orientation, and
-            navigation, achieving our goal of net neutral metrics.
-          </AnimatedP>
-        </ItemContent>
+        />
+        <AnimatedText>
+          <p>
+            I co-drove strategy and design for the mobile data viz library.
+            Since adoption, Business Insights saw a reverse in regression and a
+            lift in WAU and MAU.
+          </p>
+        </AnimatedText>
+        <AnimatedText>
+          <p>
+            I crafted animated transitions for web and mobile components to aid
+            user comprehension around progress and navigation, achieving our
+            goal of net neutral metrics.
+          </p>
+        </AnimatedText>
+        <AnimatedText>
+          <p>I loved investing in the design community by</p>
+          <ul>
+            <li>speaking on University Grad panels</li>
+            <li>leading portfolio reviews with undergrads</li>
+            <li>mentoring product design and content design interns</li>
+            <li>leading a Women@ circle</li>
+            <li>
+              teaching the “Intro to Design Systems” class to hundreds of new
+              hires in Design Camp
+            </li>
+            <li>interviewing potential hires for product designer roles</li>
+          </ul>
+        </AnimatedText>
       </main>
       <Footer />
     </>
@@ -157,17 +177,20 @@ function App() {
 
 const HeaderText = () => {
   return (
-    <h1>
-      Hi I’m Max! I’m a Brooklyn-based product designer.
+    <div>
+      <h1>Hi I’m Max! I’m a Brooklyn-based product designer.</h1>
       <br />
+      <h1>
+        I’m a sucker for handwritten notes, tart strawberry ice cream, the good
+        food + good music + good company trifecta. I learn most things from the
+        internet, books, and people around me.
+      </h1>
       <br />
-      I’m a sucker for handwritten notes, tart strawberry ice cream, the good
-      food + good music + good company trifecta. I learn most things from the
-      internet, books, and people around me.
-      <br />
-      <br />I am most drawn to work that requires a high degree of craft,
-      collaboration and a whole lot of care.
-    </h1>
+      <h1>
+        I am most drawn to work that requires a high degree of craft,
+        collaboration and a whole lot of care.
+      </h1>
+    </div>
   );
 };
 

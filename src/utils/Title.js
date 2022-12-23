@@ -1,8 +1,8 @@
 import { motion } from "framer-motion/dist/framer-motion";
 
-export default function ItemTitle(props) {
+export default function Title(props) {
   const item = {
-    hidden: { opacity: 0, y: -15 },
+    hidden: { opacity: 0, y: -45 },
     visible: { opacity: 1, y: 0 },
   };
 
@@ -14,8 +14,8 @@ export default function ItemTitle(props) {
       variants={item}
       transition={{duration: 0.5}}
     >
-      {props.children}
       <small>{props.date}</small>
+      {props.children}
     </motion.div>
   );
 }

@@ -1,13 +1,13 @@
 import { motion } from "framer-motion/dist/framer-motion";
 
-export default function AnimatedP(props) {
+export default function AnimatedText(props) {
   const item = {
-    hidden: { opacity: 0, y: -15 },
+    hidden: { opacity: 0, y: -45 },
     visible: { opacity: 1, y: 0 },
   };
 
   return (
-    <motion.p
+    <motion.div
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 1 }}
@@ -15,6 +15,6 @@ export default function AnimatedP(props) {
       transition={{duration: 0.5}}
     >
       {props.children}
-    </motion.p>
+    </motion.div>
   );
 }
