@@ -149,14 +149,7 @@ function App() {
           </p>
         </AnimatedText>
         <AnimatedText>
-          <p>
-            I crafted animated transitions for web and mobile components to aid
-            user comprehension around progress and navigation, achieving our
-            goal of net neutral metrics.
-          </p>
-        </AnimatedText>
-        <AnimatedText>
-          <p>I loved investing in the design community by</p>
+          <p>I invested in the design community by</p>
           <ul>
             <li>speaking on University Grad panels</li>
             <li>leading portfolio reviews with undergrads</li>
