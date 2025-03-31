@@ -29,8 +29,16 @@ body {
   font-size: 0.94em;
   line-height: 1.4em;
   color: #524d4b;
-  margin: 6em auto 5em;
+  position: relative;
   text-align: center;
+  height: 98vh;
+}
+
+#root {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 p {
@@ -44,7 +52,7 @@ header {
 
 header h1 {
   margin: 0 auto;
-  max-width: 412px;
+  max-width: 340px;
   font-size: 1em;
   font-weight: 400;
 }
@@ -53,16 +61,16 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  margin-top: 3em;
-  margin-left: 92px;
+  margin-top: 4em;
+  margin-left: 76px;
 }
 
 .bottom-stickers {
   display: flex;
   justify-content: center;
-  margin-top: -22px;
+  margin-top: -20px;
   margin-left: -32px;
-  margin-bottom: 3.2em;
+  margin-bottom: 5em;
 }
 
 .figma img {
