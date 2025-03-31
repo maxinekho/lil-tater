@@ -1,13 +1,7 @@
-import clsx from "clsx";
 import dayjs from "dayjs";
 import { useEffect, useState } from "react";
-import { Link } from "react-scroll";
 import { Sticker } from "./components/Sticker";
 import "./index.css";
-import Image from "./utils/Image";
-import Title from "./utils/Title";
-import AnimatedText from "./utils/AnimatedText";
-import { Separator } from "./utils/Separator";
 
 function App() {
   /**
