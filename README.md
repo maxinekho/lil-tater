@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Maxine Kho portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Existing React portfolio, prepared for incremental implementation from a forthcoming Figma specification. The current site is the visual baseline; the Figma specification will be the design source of truth once supplied. Do not infer new layouts, styles, typography, or content from the preparation structure.
 
-## Available Scripts
+## Local development
 
-In the project directory, you can run:
+Use Node 24 and npm 10 (see `.nvmrc` and `package.json`). With nvm installed:
 
-### `npm start`
+```sh
+nvm install
+nvm use
+npm install --global npm@10
+npm ci
+npm start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The development server uses http://localhost:3000. No Firebase credentials or environment variables are required to render the current site.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```sh
+npm run build
+```
 
-### `npm test`
+The production output is `build/`. This command only creates local files; it does not publish the website. `npm test` starts CRA's Jest runner; there are currently no committed automated tests.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Source organization
 
-### `npm run build`
+- `src/index.js`: React root and the single global CSS import.
+- `src/App.js`: composition of the existing site.
+- `src/components/layout/`: the current header (including sticker groups) and footer, extracted without changing markup or copy.
+- `src/components/`: existing reusable React components (`Sticker`, `AnimatedText`, `Image`, `Separator`, `Title`). These are retained capabilities, not a specification for the future design.
+- `src/utils/`: compatibility exports for the former component locations; new UI components belong in `components/`.
+- `src/index.css`: existing global styles, preserved as the visual baseline.
+- `src/fonts/`: existing Bespoke font.
+- `public/assets/`: existing images, including historical project artwork retained for review.
+- `public/index.html`: the only CRA HTML template.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Add components and styling only as the Figma specification requires them. Keep `App` focused on composition and place reusable UI in `components/`; introduce further structure when actual implementation needs it.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Hosting and intended domain
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Intended domain reference: **https://maxine-kho.com/** (`package.json` `homepage`).
+- Firebase project: **maxkho-website** (`.firebaserc`, preserved).
+- Firebase Hosting public directory: **build** (`firebase.json`, preserved).
+- Existing catch-all rewrite to `/index.html` is preserved.
 
-### `npm run eject`
+The domain reference does not provision a custom domain, change DNS, or configure redirects. Domain connection must be handled separately when explicitly authorized. No deployment or live configuration change is part of this preparation. There is no deployment script or automatic deployment workflow in this snapshot.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+See [the preparation audit](docs/implementation-preparation.md) for dependency risks, asset inventory, and verification results.

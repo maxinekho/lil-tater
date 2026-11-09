@@ -148,3 +148,8 @@ yarn-error.log*
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Firebase generated state and diagnostic output
+/.firebase/
+/firebase-debug.log*
+/firepit-log.txt
