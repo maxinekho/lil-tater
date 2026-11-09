@@ -1,5 +1,7 @@
 # Implementation preparation audit
 
+Historical record of the CRA preparation work. Current tooling and verification are documented in [the Vite migration report](vite-migration.md).
+
 Audited source: `maxinekho/lil-tater`, `main` at `bc02d358d4983f5dd24228c56a34f5b2179d7c4e`.
 
 ## Existing application
@@ -50,7 +52,7 @@ Verified November 9, 2026 with Node 24.22.1 and npm 10.9.4:
 
 ### Security findings
 
-The first resolved CRA 5 lockfile reported 39 findings. A single non-forced `npm audit fix` reduced this to **34: 13 high, 5 moderate, 16 low, 0 critical**. These counts include parent packages affected by vulnerable descendants, so they are not 34 independent defects. See the dated [machine-readable audit snapshot](dependency-audit.json) for exact dependency paths and advisory URLs. Counts can change as advisories are published.
+The first resolved CRA 5 lockfile reported 39 findings. A single non-forced `npm audit fix` reduced this to **34: 13 high, 5 moderate, 16 low, 0 critical**. These counts include parent packages affected by vulnerable descendants, so they are not 34 independent defects. See the dated [machine-readable audit snapshot](archive/cra-dependency-audit.json) for exact dependency paths and advisory URLs. Counts can change as advisories are published.
 
 Remaining findings are in the CRA build, test, asset-processing, and development-server dependency chains. Examples include webpack-dev-server/webpack-dev-middleware, SVGO/nth-check, resolve-url-loader/PostCSS, and Workbox/serialize-javascript. The current application has no runtime imports of these packages and Firebase serves static output; this does not eliminate risks when running development tooling or processing untrusted inputs. Use the development server on loopback while preparing the design implementation. Do not treat the retained CRA toolchain as fully maintained or security-clean. A dedicated tooling maintenance/migration task is needed to resolve findings that cannot be fixed within supported dependency ranges.
 

@@ -1,0 +1,42 @@
+{
+  "visualComparisons": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "screenshotHeight": 1000,
+      "differingPixels": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "screenshotHeight": 977,
+      "differingPixels": 0
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "screenshotHeight": 876,
+      "differingPixels": 0
+    }
+  ],
+  "checks": [
+    {
+      "port": 3000,
+      "spaFallback": true,
+      "all13PublicImages": true,
+      "manifest": true,
+      "all4HoverInteractions": true,
+      "linksPreserved": true,
+      "consoleErrors": []
+    },
+    {
+      "port": 4173,
+      "spaFallback": true,
+      "all13PublicImages": true,
+      "manifest": true,
+      "all4HoverInteractions": true,
+      "linksPreserved": true,
+      "consoleErrors": []
+    }
+  ]
+}
